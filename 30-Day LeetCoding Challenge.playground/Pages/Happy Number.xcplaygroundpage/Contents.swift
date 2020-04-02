@@ -31,6 +31,16 @@ func isHappy(_ n: Int) -> Bool {
     }
 }
 
+// clean solution
+func isHappy2(_ n: Int) -> Bool {
+    var cache = Set<Int>()
+    var current = n
+    while (current != 1 && cache.insert(current).inserted) {
+        current = caculate(current)
+    }
+    return current == 1
+}
+
 func caculate(_ n: Int) -> Int {
     var result = 0
     var current = n
