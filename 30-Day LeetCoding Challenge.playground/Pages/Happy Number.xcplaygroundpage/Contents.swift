@@ -52,4 +52,20 @@ func caculate(_ n: Int) -> Int {
 }
 
 // test
-isHappy(19)
+import XCTest
+
+class TestCase: XCTestCase {
+    func test_isHappy() {
+        XCTAssertTrue(isHappy(14))
+        XCTAssertTrue(isHappy(100))
+        XCTAssertTrue(isHappy(28))
+    }
+    
+    func test_isNotHappy() {
+        XCTAssertFalse(isHappy(14))
+        XCTAssertFalse(isHappy(34))
+        XCTAssertFalse(isHappy(75))
+    }
+}
+
+TestCase.defaultTestSuite.run()

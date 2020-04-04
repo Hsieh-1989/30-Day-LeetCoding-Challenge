@@ -36,11 +36,21 @@ func singleNumber2(_ nums: [Int]) -> Int {
 }
 
 // test
-let input1 = [2,2,1]
-let input2 = [4,1,2,1,2]
+import XCTest
 
-assert(singleNumber(input1) == 1)
-assert(singleNumber(input2) == 4)
+class TestCase: XCTestCase {
+    let input1 = [2,2,1]
+    let input2 = [4,1,2,1,2]
 
-assert(singleNumber2(input1) == 1)
-assert(singleNumber2(input2) == 4)
+    func test_singleNumber() {
+        XCTAssertEqual(singleNumber([2,2,1]), 1)
+        XCTAssertEqual(singleNumber([4,1,2,1,2]), 4)
+    }
+    
+    func test_singleNumber_usingBinaryOperator() {
+        XCTAssertEqual(singleNumber2([2,2,1]), 1)
+        XCTAssertEqual(singleNumber2([4,1,2,1,2]), 4)
+    }
+}
+
+TestCase.defaultTestSuite.run()

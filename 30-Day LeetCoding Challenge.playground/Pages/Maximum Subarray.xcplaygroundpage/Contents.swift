@@ -52,29 +52,39 @@ func maxSubArray2(_ nums: [Int]) -> Int {
 }
 
 // test
-assert(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]) == 6)
-assert(maxSubArray([-2,-1,-3,0]) == 0)
-assert(maxSubArray([2,1]) == 3)
-assert(maxSubArray([-2,-1]) == -1)
-assert(maxSubArray([-1,0,-2]) == 0)
-assert(maxSubArray([-2,1]) == 1)
-assert(maxSubArray([1,-1,1]) == 1)
-assert(maxSubArray([1, 2,-1]) == 3)
-assert(maxSubArray([1, 1,-2]) == 2)
-assert(maxSubArray([-1,0,-2,2]) == 2)
-assert(maxSubArray([2,0,-3,2,1,0,1,-2]) == 4)
-assert(maxSubArray([2,-1,-1,2,0,-3,3]) == 3)
+import XCTest
 
-// Divide and conquer
-assert(maxSubArray2([-2,1,-3,4,-1,2,1,-5,4]) == 6)
-assert(maxSubArray2([-2,-1,-3,0]) == 0)
-assert(maxSubArray2([2,1]) == 3)
-assert(maxSubArray2([-2,-1]) == -1)
-assert(maxSubArray2([-1,0,-2]) == 0)
-assert(maxSubArray2([-2,1]) == 1)
-assert(maxSubArray2([1,-1,1]) == 1)
-assert(maxSubArray2([1, 2,-1]) == 3)
-assert(maxSubArray2([1, 1,-2]) == 2)
-assert(maxSubArray2([-1,0,-2,2]) == 2)
-assert(maxSubArray2([2,0,-3,2,1,0,1,-2]) == 4)
-assert(maxSubArray2([2,-1,-1,2,0,-3,3]) == 3)
+class TestCase: XCTestCase {
+    
+    func test_maxSubArray() {
+        XCTAssertEqual(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]), 6)
+        XCTAssertEqual(maxSubArray([-2,-1,-3,0]), 0)
+        XCTAssertEqual(maxSubArray([2,1]), 3)
+        XCTAssertEqual(maxSubArray([-2,-1]) ,-1)
+        XCTAssertEqual(maxSubArray([-1,0,-2]), 0)
+        XCTAssertEqual(maxSubArray([-2,1]), 1)
+        XCTAssertEqual(maxSubArray([1,-1,1]), 1)
+        XCTAssertEqual(maxSubArray([1, 2,-1]), 3)
+        XCTAssertEqual(maxSubArray([1, 1,-2]), 2)
+        XCTAssertEqual(maxSubArray([-1,0,-2,2]), 2)
+        XCTAssertEqual(maxSubArray([2,0,-3,2,1,0,1,-2]), 4)
+        XCTAssertEqual(maxSubArray([2,-1,-1,2,0,-3,3]), 3)
+    }
+    
+    func test_maxSubArray_usingDivideAndConquer() {
+        XCTAssertEqual(maxSubArray2([-2,1,-3,4,-1,2,1,-5,4]), 6)
+        XCTAssertEqual(maxSubArray2([-2,-1,-3,0]), 0)
+        XCTAssertEqual(maxSubArray2([2,1]), 3)
+        XCTAssertEqual(maxSubArray2([-2,-1]) ,-1)
+        XCTAssertEqual(maxSubArray2([-1,0,-2]), 0)
+        XCTAssertEqual(maxSubArray2([-2,1]), 1)
+        XCTAssertEqual(maxSubArray2([1,-1,1]), 1)
+        XCTAssertEqual(maxSubArray2([1, 2,-1]), 3)
+        XCTAssertEqual(maxSubArray2([1, 1,-2]), 2)
+        XCTAssertEqual(maxSubArray2([-1,0,-2,2]), 2)
+        XCTAssertEqual(maxSubArray2([2,0,-3,2,1,0,1,-2]), 4)
+        XCTAssertEqual(maxSubArray2([2,-1,-1,2,0,-3,3]), 3)
+    }
+}
+
+TestCase.defaultTestSuite.run()
