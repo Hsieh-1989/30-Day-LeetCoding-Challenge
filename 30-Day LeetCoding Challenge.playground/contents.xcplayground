@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='raw'>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
     <pages>
         <page name='Single Number'/>
         <page name='Happy Number'/>
         <page name='Maximum Subarray'/>
         <page name='Move Zeroes'/>
         <page name='Best Time to Buy and Sell Stock II'/>
+        <page name='Group Anagrams'/>
     </pages>
 </playground>
