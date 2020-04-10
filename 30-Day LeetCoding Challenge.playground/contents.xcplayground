@@ -10,5 +10,6 @@
         <page name='Counting Elements'/>
         <page name='Middle of the Linked List'/>
         <page name='Backspace String Compare'/>
+        <page name='Min Stack'/>
     </pages>
 </playground>
