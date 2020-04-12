@@ -12,5 +12,6 @@
         <page name='Backspace String Compare'/>
         <page name='Min Stack'/>
         <page name='Diameter of Binary Tree'/>
+        <page name='Last Stone Weight'/>
     </pages>
 </playground>
