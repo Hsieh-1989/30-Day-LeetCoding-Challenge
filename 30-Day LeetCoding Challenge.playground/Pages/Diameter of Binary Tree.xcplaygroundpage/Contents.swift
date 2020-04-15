@@ -34,7 +34,7 @@ func depth(_ tree: TreeNode) -> Int {
 import XCTest
 
 class TestCase: XCTestCase {
-    func testDiameterOfBinaryTree() {
+    func test_diameterOfBinaryTree() {
         
         XCTAssertEqual(diameterOfBinaryTree(nil), 0)
         XCTAssertEqual(diameterOfBinaryTree(.init(1)), 0)

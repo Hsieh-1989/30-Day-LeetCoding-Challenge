@@ -40,7 +40,7 @@ func lastStoneWeight(_ stones: [Int]) -> Int {
 import XCTest
 
 class TestCase: XCTestCase {
-    func testLastStoneWeight() {
+    func test_lastStoneWeight() {
         XCTAssertEqual(lastStoneWeight([2,7,4,1,8,1]), 1)
     }
 }

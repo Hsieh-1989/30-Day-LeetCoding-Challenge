@@ -41,7 +41,7 @@ func stringShift(_ s: String, _ shift: [[Int]]) -> String {
 import XCTest
 
 class TestCase: XCTestCase {
-    func testLastStoneWeight() {
+    func test_stringShift() {
         XCTAssertEqual(stringShift("abc", [[0,1],[1,2]]), "cab")
         XCTAssertEqual(stringShift("abcdefg", [[1,1],[1,1],[0,2],[1,3]]), "efgabcd")
     }

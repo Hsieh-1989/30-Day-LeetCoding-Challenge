@@ -32,7 +32,7 @@ func findMaxLength(_ nums: [Int]) -> Int {
 import XCTest
 
 class TestCase: XCTestCase {
-    func testLastStoneWeight() {
+    func test_findMaxLength() {
         XCTAssertEqual(findMaxLength([0, 1]), 2)
         XCTAssertEqual(findMaxLength([0, 1, 0]), 2)
         XCTAssertEqual(findMaxLength([0, 1, 1]), 2)

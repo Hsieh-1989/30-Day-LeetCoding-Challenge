@@ -73,7 +73,7 @@ import XCTest
 
 class TestCase: XCTestCase {
     
-    func testMinStackPush() {
+    func test_minStackPush() {
         let sut = MinStack()
         sut.push(1)
         sut.push(2)
@@ -81,7 +81,7 @@ class TestCase: XCTestCase {
         XCTAssertEqual(sut, [1, 2, 3])
     }
     
-    func testMinStackPop() {
+    func test_minStackPop() {
         let sut = MinStack([1, 2, 3])
         sut.pop()
         XCTAssertEqual(sut, [1, 2])
@@ -91,11 +91,11 @@ class TestCase: XCTestCase {
         XCTAssertEqual(sut, [])
     }
     
-    func testMinStackTop() {
+    func test_minStackTop() {
         XCTAssertEqual(MinStack([1, 2, 3]).top(), 3)
     }
     
-    func testMinStackMinValue() {
+    func test_minStackMinValue() {
         let sut = MinStack([2, 3, 2, 1, 3, 1])
         
         XCTAssertEqual(sut, [2, 3, 2, 1, 3, 1])

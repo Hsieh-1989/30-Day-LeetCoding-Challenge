@@ -75,7 +75,7 @@ import XCTest
 
 class TestCase: XCTestCase {
     
-    func test_middleNode() {
+    func test_backspaceCompare() {
         
         XCTAssertTrue(backspaceCompare("ab#c", "ad#c"))
         XCTAssertTrue(backspaceCompare("ab##", "c#d#"))
@@ -84,7 +84,7 @@ class TestCase: XCTestCase {
         XCTAssertFalse(backspaceCompare("a#c", "b"))
     }
     
-    func test_middleNode2() {
+    func test_backspaceCompare2() {
         
         XCTAssertTrue(backspaceCompare2("ab#c", "ad#c"))
         XCTAssertTrue(backspaceCompare2("ab##", "c#d#"))
