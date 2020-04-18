@@ -41,13 +41,6 @@ func numIslands(_ grid: [[Character]]) -> Int {
     return result
 }
 
-extension Array {
-    subscript(safe: Int) -> Element? {
-        guard safe < endIndex else { return nil }
-        return self[safe]
-    }
-}
-
 // BFS
 func numIslands_BFS(_ grid: [[Character]]) -> Int {
     
