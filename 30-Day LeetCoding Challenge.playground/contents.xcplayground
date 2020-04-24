@@ -24,5 +24,6 @@
         <page name='Leftmost Column with at Least a One '/>
         <page name=' Subarray Sum Equals K'/>
         <page name='Bitwise AND of Numbers Range'/>
+        <page name='LRU Cache'/>
     </pages>
 </playground>
