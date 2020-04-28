@@ -28,5 +28,6 @@
         <page name='Jump Game'/>
         <page name='Longest Common Subsequence'/>
         <page name='Maximal Square Solution'/>
+        <page name='First Unique Number'/>
     </pages>
 </playground>
