@@ -119,6 +119,8 @@ class FirstUnique {
         let next = node.next
         previous?.next = next
         next?.previous = previous
+        node.next = nil
+        node.previous = nil
     }
 }
 
