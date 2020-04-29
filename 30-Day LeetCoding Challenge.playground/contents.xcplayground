@@ -29,5 +29,6 @@
         <page name='Longest Common Subsequence'/>
         <page name='Maximal Square Solution'/>
         <page name='First Unique Number'/>
+        <page name='Binary Tree Maximum Path Sum '/>
     </pages>
 </playground>
